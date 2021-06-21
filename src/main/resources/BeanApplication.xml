@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bean>
+    <pattern>single</pattern>
+
+    <beanName>leetCode12</beanName>
+    <className>jyc.leetcode.LeetCode12</className>
+
+    <beanName>leetCode15</beanName>
+    <className>jyc.leetcode.LeetCode15</className>
+
+    <beanName>leetCode52</beanName>
+    <className>jyc.leetcode.LeetCode52</className>
+
+</bean>
+
