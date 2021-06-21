@@ -13,7 +13,7 @@ logs/
 mysql.sql
 out/
 *.class
-
+*.log
 *.iml
 *.ipr
 *.iws
