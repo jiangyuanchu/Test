@@ -1,4 +1,4 @@
-package jyc.leetcode;
+package jyc.leetcode.JianZhiOffer;
 
 import jyc.annotation.QuickStart;
 import jyc.aop.LeetCodeBase;
@@ -7,7 +7,7 @@ import jyc.utils.LeetCodeQuickStart;
 import java.util.HashSet;
 import java.util.Set;
 
-public class LeetCodeJianZhiOffer03 implements LeetCodeBase {
+public class JianZhiOffer03 implements LeetCodeBase {
 
     @QuickStart
     public int findRepeatNumber(int[] nums) {
@@ -23,7 +23,7 @@ public class LeetCodeJianZhiOffer03 implements LeetCodeBase {
     }
 
     public static void main(String[] args) throws Exception {
-        System.out.println((int)LeetCodeQuickStart.quickStart(LeetCodeJianZhiOffer03.class, new int[]{1, 2, 3, 3}));
+        System.out.println((int)LeetCodeQuickStart.quickStart(JianZhiOffer03.class, new int[]{1, 2, 3, 3}));
     }
 
     @Override

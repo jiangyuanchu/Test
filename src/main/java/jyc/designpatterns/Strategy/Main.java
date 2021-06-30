@@ -1,7 +1,5 @@
 package jyc.designpatterns.Strategy;
 
-import java.util.Arrays;
-
 /**
  * @Description todo
  * @ClassName Main
@@ -12,11 +10,14 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-        int[] a = {9, 2, 3, 5, 7, 1, 4};
-        Cat[] cats = {new Cat(5), new Cat(1), new Cat(3)};
-        Sorter sorter = new Sorter();
-        sorter.sort(cats);
-        System.out.println(Arrays.toString(cats));
+
+        Cat[] cats = new Cat[]{new Cat(1,1), new Cat(5,5), new Cat(3,3)};
+        Sorter<Cat> sorter = new Sorter<>();
+        sorter.sort(cats, new CatWeightCompareStrategy());
+        for (int i = 0; i < cats.length; i++) {
+            System.out.println(cats[i]);
+        }
+
     }
 
 

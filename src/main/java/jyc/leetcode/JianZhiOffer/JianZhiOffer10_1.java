@@ -1,8 +1,8 @@
-package jyc.leetcode;
+package jyc.leetcode.JianZhiOffer;
 
 import jyc.aop.LeetCodeBase;
 
-public class LeetCodeJianZhiOffer10_1 implements LeetCodeBase {
+public class JianZhiOffer10_1 implements LeetCodeBase {
 
     public int fib(int n) {
         if(n == 0){
@@ -22,8 +22,8 @@ public class LeetCodeJianZhiOffer10_1 implements LeetCodeBase {
     }
 
     public static void main(String[] args) {
-        LeetCodeJianZhiOffer10_1 leetCodeJianZhiOffer10_1 = new LeetCodeJianZhiOffer10_1();
-        System.out.println(leetCodeJianZhiOffer10_1.fib(46));
+        JianZhiOffer10_1 jianZhiOffer10_1 = new JianZhiOffer10_1();
+        System.out.println(jianZhiOffer10_1.fib(46));
     }
 
     @Override
