@@ -27,7 +27,6 @@ public class LeetCode1 implements LeetCodeBase {
 
     public static void main(String[] args) throws Exception {
         System.out.println(Arrays.toString((int[]) LeetCodeQuickStart.quickStart(LeetCode1.class, new int[]{2, 7, 11, 15}, 18)));
-//        System.out.println(System.currentTimeMillis());
     }
 
 
