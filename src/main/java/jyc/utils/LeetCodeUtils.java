@@ -99,6 +99,27 @@ public class LeetCodeUtils {
     }
 
     /**
+     * 打印数组
+     * @param objArray
+     */
+    public static void printArray(Object[] objArray){
+        if(objArray == null){
+            System.out.println("null");
+            return;
+        }
+        if(objArray.length == 0){
+            System.out.println("[]");
+            return;
+        }
+        StringBuilder sb = new StringBuilder();
+        sb.append("[");
+        Arrays.stream(objArray).forEach(t -> sb.append(t.toString()).append(", "));
+        sb.delete(sb.length() - 2, sb.length());
+        sb.append("]");
+        System.out.println(sb.toString());
+    }
+
+    /**
      * LeetCode输入数组 字符串转换工具
      * @param str
      */
