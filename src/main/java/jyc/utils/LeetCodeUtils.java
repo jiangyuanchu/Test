@@ -123,12 +123,12 @@ public class LeetCodeUtils {
      * LeetCode输入数组 字符串转换工具
      * @param str
      */
-    public static void arrayFormatConversion(String str){
+    public static String arrayFormatConversion(String str){
         str = str.replace('[','{');
         str = str.replace(']','}');
         System.out.println("LeetCode输入数组 字符串转换:");
         System.out.println(str);
-
+        return str;
     }
 
     /**
