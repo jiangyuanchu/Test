@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    <bean class="enetity.Person" id = "person" >-->
+<!--        <constructor-arg index="0" value="张三"/>-->
+<!--        <constructor-arg index="1" value="12"/>-->
+<!--    </bean>-->
+
+<!--    自定义属性资源加载器-->
+    <bean id="customer" class="selfEditor.Customer">
+        <property name="name" value="zhangsan" />
+        <property name="address" value="北京_海淀" />
+    </bean>
+<!--    <bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">-->
+<!--        <property name="propertyEditorRegistrars">-->
+<!--            <list>-->
+<!--                <bean class="selfEditor.AddressPropertyEditorRegistrar" />-->
+<!--            </list>-->
+<!--        </property>-->
+<!--    </bean>    -->
+
+    <bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+        <property name="customEditors">
+            <map>
+                <entry key="selfEditor.Address">
+                    <value>selfEditor.AddressPropertyEditor</value>
+                </entry>
+            </map>
+        </property>
+    </bean>
+
+    <bean id="myBeanFactoryPostProcesser" class="postprocessor.MyBeanFactoryPostProcesser" />
+    <bean id="myBeanDefinitionRegistryPostprocessor" class="postprocessor.MyBeanDefinitionRegistryPostprocessor" />
+</beans>
